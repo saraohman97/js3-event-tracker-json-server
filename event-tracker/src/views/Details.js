@@ -19,7 +19,7 @@ const Details = () => {
   const { loading, data: event, error } = useSelector(state => state.event)
 
   const template = ( event &&
-    <div>
+    <div className='details'>
       <h2>{event.title}</h2>
       <p>{event.desc}</p>
     </div>
